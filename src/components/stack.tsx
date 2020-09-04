@@ -7,7 +7,7 @@ import { styled } from "goober";
 type MainAlign = "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly";
 type SeconderyAlign = "stretch" | "center" | "start" | "end" | "unset";
 
-interface StackProps {
+export interface StackProps {
     alignContent ?: "start" | "center" | "space-between" | "space-around" | "unset";
     alignSelf ?: "stretch" | "center" | "start" | "end" | "unset";
     wrap ?: "nowrap" | "wrap" | "wrap-reverse";
@@ -20,7 +20,7 @@ const stack = styled("div")<StackProps>`
     flex-wrap: ${p => p.wrap};
 `;
 
-interface VStackProps extends StackProps {
+export interface VStackProps extends StackProps {
     horizontalAlign ?: SeconderyAlign;
     verticalAlign ?: MainAlign;
 }
@@ -31,7 +31,7 @@ export const VStack = styled(stack)<VStackProps>`
     align-items: ${p => p.horizontalAlign};
 `;
 
-interface HStackProps extends StackProps {
+export interface HStackProps extends StackProps {
     horizontalAlign ?: MainAlign;
     verticalAlign ?: SeconderyAlign;
 }
