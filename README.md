@@ -5,7 +5,7 @@ Nix is set of utils for React / Preact.
 ## Components
 
 ### Stack
-Stack is component for using Flex Box easily in React as an Component Also it's have some abstract login around align mess in flexbox You don't have to think about if it's row or column you simple align stuff With `verticalAlign` or` horizontalAlign` .'
+Stack is component for using Flex Box easily in React as an Component Also it's have some abstract logic around align mess in flexbox You don't have to think about if it's row or column you simple align stuff With `verticalAlign` or` horizontalAlign` .'
 
 ```jsx
 <HStack verticalAlign="center" horizontalAlign="center">
