@@ -1,10 +1,22 @@
 {
     "name": "@apparently-studio/nix",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "repository": "git://github.com/apparently-studio/nix.git",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
+    "files": [
+        "lib/**/*"
+    ],
     "sideEffects": false,
+    "peerDependencies": {
+        "goober": "2.0.5",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "eslint": ">= 3"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "scripts": {
         "build": "tsc",
         "pack": "npm pack ./lib"
